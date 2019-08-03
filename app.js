@@ -8,6 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 const serverOptions = {
         port: PORT,
+        host: '0.0.0.0',
     };
 
 if(ENV === "DEV") {
