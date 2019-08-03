@@ -4,15 +4,16 @@ const Hapi = require('@hapi/hapi');
 
 const PORT = process.env.PORT || 3000;
 
+const serverOptions = {
+        port: PORT,
+    };
+
 const init = async () => {
 
-    const server = Hapi.server({
-        port: PORT,
-        host: 'localhost'
-    });
+    const server = Hapi.server(serverOptions);
 
     await server.start();
-    console.log('Server running on %ss', server.info.uri);
+    console.log('Server running on %s', server.info.uri);
 };
 
 process.on('unhandledRejection', (err) => {
