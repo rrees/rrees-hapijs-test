@@ -267,6 +267,11 @@
     "@hapi/bourne" "1.x.x"
     "@hapi/hoek" "6.x.x"
 
+hapi-require-https@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/hapi-require-https/-/hapi-require-https-3.0.1.tgz#b844e7919e36325db5de6728d1131f567c9f5336"
+  integrity sha512-yDyfVy2QAWgISjh2UwaspAj/V4zz9vBlSDjWh8kcBFz9ZLkvXZLQRhDLryTyEx58cBZpNQYK+7ExvvtzEa+8GQ==
+
 mime-db@1.x.x:
   version "1.40.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.40.0.tgz#a65057e998db090f732a68f6c276d387d4126c32"

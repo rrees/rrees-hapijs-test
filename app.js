@@ -28,7 +28,13 @@ const init = async () => {
         }
     });
 
+    await server.register({
+    	plugin: require('hapi-require-https'),
+    	options: {}
+    });
+
     await server.start();
+
     console.log('Server running on %s', server.info.uri);
 };
 
